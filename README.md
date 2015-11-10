@@ -1,4 +1,4 @@
-# Bootstrap Confirm Dialog
+# Bootstrap Confirm Dialog <small>v1.0.0</small>
 Plugin para janelas de dialogos de confirmação, substitui a função <code>confirm()</code> do JavaScript de forma elegante.
 <h3>Full</h3>
 Na versão Full é possível difinir a linguagem e o titulo da janela, além da mensagem e das funções de callback.
