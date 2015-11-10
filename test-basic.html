@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Confirm Bootstrap - Basic</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Bootstrap Confirm Dialog <small>Basic</small></h1>
+		</div>
+		<button class="btn btn-Primary" id="teste">Teste</button>
+	</div>
+</body>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="confirmBootstrap/basic.js"></script>
+<script type="text/javascript">
+
+$('#teste').click(function(){
+	confirmDialog('Você tem certeza que deseja apagar?', function(){
+		alert("Confirmou")
+	}, function(){
+		alert("Não")
+	});
+})
+
+</script>
+</html>

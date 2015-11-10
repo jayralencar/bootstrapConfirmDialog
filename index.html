@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Confirm Bootstrap</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Bootstrap Confirm Dialog <small>Full</small></h1>
+		</div>
+		<button class="btn btn-Primary" id="teste">Teste</button>
+	</div>
+</body>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="confirmBootstrap/full.js"></script>
+<script type="text/javascript">
+
+$('#teste').click(function(){
+	confirmDialog({
+		message:'Tem certeza que deseja confirmar?',
+		language:'english.json',
+		onConfirm: function(){
+			alert('Confimou')
+		},
+		onDismiss: function(){
+			alert('Não')
+		}
+		
+	});
+})
+
+
+</script>
+</html>
